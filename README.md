@@ -1,4 +1,4 @@
-![Screenshot 2025-01-22 221828](https://github.com/user-attachments/assets/1491f3e5-7f5b-4872-aac9-cd701329cc6a)# Modern Scientific Calculator
+# Modern Scientific Calculator
 
 A sleek and powerful scientific calculator built with HTML, CSS, and JavaScript. This calculator features a modern dark-themed UI with glassmorphism effects and comprehensive scientific calculation capabilities.
 
