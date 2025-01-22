@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #181818, #060606);
+}
+
+.calculator {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+.display {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    min-height: 100px;
+}
+
+.previous-operand {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    min-height: 24px;
+}
+
+.current-operand {
+    color: white;
+    font-size: 2.5rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+button {
+    border: none;
+    padding: 15px 10px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.number {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.operator {
+    background: rgba(52, 152, 219, 0.3);
+}
+
+.equals {
+    background: rgba(46, 204, 113, 0.4);
+}
+
+.function {
+    background: rgba(155, 89, 182, 0.3);
+    font-size: 0.9rem;
+}
+
+.clear {
+    background: rgba(231, 76, 60, 0.4);
+}
+
+.delete {
+    background: rgba(230, 126, 34, 0.4);
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        width: 95%;
+        padding: 15px;
+    }
+
+    button {
+        padding: 12px 8px;
+        font-size: 1rem;
+    }
+
+    .function {
+        font-size: 0.8rem;
+    }
+}
